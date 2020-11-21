@@ -1,0 +1,116 @@
+body {
+  background-color: Darkorange;
+  transition: background-color 0.5s;
+  font-family: Notable, Oswald, serif;
+}
+
+.playlist {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.track-img {
+  margin: 25px;
+  height: 350px;
+  width: 350px;
+  background-image: url("https://images.pexels.com/photos/5840188/pexels-photo-5840188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+}
+
+.now-playing {
+  font-size: 1.5rem;
+}
+
+.track-name {
+  font-size: 3rem;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+  color: DarkSlateGrey;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* tid baren eller vad den nu heter*/
+.slide-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: DarkSlateGrey;
+
+}
+
+/* tid baren den vita runda grejen*/
+.slide-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+.slide-bar {
+  width: 60%;
+}
+/* tiden som visas */
+.current-time,
+.total-duration {
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* styla ikoner*/
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-chevron-circle-left,
+i.fa-chevron-circle-right {
+  cursor: pointer;
+}
+
+i.fa-chevron-circle-left,
+i.fa-chevron-circle-right {
+  font-size: 45px;
+}

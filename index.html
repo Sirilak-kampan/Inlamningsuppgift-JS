@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Music Player</title>
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- fontent -->
+  <link href="https://fonts.googleapis.com/css?family=Notable|Oswald" rel="stylesheet">
+  <!-- css filen -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  <div class="playlist">
+    <div class="details">
+      <div class="now-playing">Spela x av y</div>
+      <div class="track-img"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()"><i class="fas fa-chevron-circle-left"></i></div>
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+      <div class="next-track" onclick="nextTrack()"><i class="fas fa-chevron-circle-right"></i></div>
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="slide-bar" onchange="barTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+   
+  </div>
+
+  <!-- javascript härrrrrrr -->
+  <script src="main.js"></script>
+
+
+</body>
+</html>
